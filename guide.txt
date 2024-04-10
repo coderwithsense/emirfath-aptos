@@ -1,0 +1,7 @@
+FLOW
+
+- A person add a nft and make a new raffle. We keep that NFT locked
+- Sets time for ending the raffle, once finished, we pick a random winner from the list and send it to them
+EASY
+
+Will deliver with minimal UI so we can ask for more money for a good UI
