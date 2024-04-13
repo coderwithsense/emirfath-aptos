@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/card";
 import { data } from "autoprefixer";
 import toast, { Toaster } from "react-hot-toast";
+import { AptosTransaction } from "@/components/aptos-transactions";
 
 // {
 //   "amount": "1",
@@ -104,9 +105,6 @@ export default function Home() {
     toast.error(error);
   }
 
-  const transactionToSendNft = async () => {
-
-  }
 
   const signingBaaji = async () => {
     const payload = {
@@ -145,7 +143,8 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <Button onClick={sendTokens}>Send Tokens</Button>
+              <Button onClick={getNfts}>Send Tokens</Button>
+              <AptosTransaction />
             </div>
           </div>
         ) : (
